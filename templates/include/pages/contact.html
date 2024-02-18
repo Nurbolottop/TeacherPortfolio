@@ -1,0 +1,86 @@
+{% load static %}
+<div class="iknow_tm_animate_section" id="contact">
+    <div class="section_inner">
+      <div class="iknow_tm_contact">
+        <div class="iknow_tm_main_title">
+          <span>Мени менен байланыш</span>
+          <h3>Ишиңизди бүтүрүү үчүн мага кайрылыңыз</h3>
+        </div>
+        <div class="wrapper">
+          <div class="left">
+            <ul>
+              <li>
+                <div class="list_inner">
+                  <span class="icon">
+                    <img class="svg" src="{% static 'img/svg/smartphone.svg' %}" alt />
+                  </span>
+                  <div class="short">
+                    <h3>Call Me</h3>
+                    <span>+123 456 7890</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <span class="icon">
+                    <img class="svg" src="{% static 'img/svg/letter.svg' %}" alt />
+                  </span>
+                  <div class="short">
+                    <h3>Email Us</h3>
+                    <span>
+                      <a href="#">
+                        <span class="__cf_email__" data-cfemail="dbb3beb7b7b49bb2b0b5b4acf5b8b4b6">[email&#160;protected]</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <span class="icon">
+                    <img class="svg" src="{% static 'img/svg/placeholder.svg' %}" alt />
+                  </span>
+                  <div class="short">
+                    <h3>Address</h3>
+                    <span>20, Bardeshi, Amin Bazar</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="fields">
+              <form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
+                <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+                <div class="empty_notice">
+                  <span>Please Fill Required Fields</span>
+                </div>
+                <div class="input_list">
+                  <ul>
+                    <li>
+                      <input id="name" type="text" placeholder="Your Name" />
+                    </li>
+                    <li>
+                      <input id="email" type="text" placeholder="Your Email" />
+                    </li>
+                    <li>
+                      <input id="phone" type="number" placeholder="Your Phone" />
+                    </li>
+                    <li>
+                      <input id="subject" type="text" placeholder="Subject" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="message_area">
+                  <textarea id="message" placeholder="Your message here"></textarea>
+                </div>
+                <div class="iknow_tm_button">
+                  <a id="send_message" href="#">Submit Now</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

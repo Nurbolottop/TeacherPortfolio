@@ -1,0 +1,27 @@
+{% load static %}
+<div class="iknow_tm_animate_section animated" id="home">
+    <div class="iknow_tm_hero_extra">
+      <div class="background">
+        <div class="image"></div>
+        <div class="overlay"></div>
+      </div>
+      <div class="hero_content">
+        <div class="left">
+          {% comment %} <span class="hello">Hello,I'm</span> {% endcomment %}
+          <h3 class="name">{{user_info.name}}</h3>
+          <p class="text">{{user_info.descriptions|safe}}</p>
+          <div class="iknow_tm_button yellow transition_link">
+            <br>
+            <a href="#contact">Мени менен байланыш</a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image parallax" data-relative-input="true">
+            <img src="{% static 'img/thumbs/47-60.jpg' %}" alt />
+            <div class="main layer" data-depth="0.05" data-img-url="{{user_info.image.url}}"></div>
+            <span class="box layer" data-depth="0.1"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

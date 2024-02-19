@@ -10,7 +10,17 @@ class Settings(models.Model):
         verbose_name="Логотип",
         blank = True, null = True
     )
-
+    phone = models.CharField(
+        max_length = 255,
+        verbose_name = "Телефонный номер"
+    )
+    email = models.EmailField(
+        verbose_name = "Почта"
+    )
+    locations = models.CharField(
+        max_length = 255,
+        verbose_name = "Адресс"
+    )
     class Meta:
         verbose_name = "1) Сайттын параметрлери"
         verbose_name_plural = "1) Сайттын параметрлери"

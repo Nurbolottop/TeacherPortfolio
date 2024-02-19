@@ -1,4 +1,14 @@
 {% load static %}
+<style>
+    /* Уникальные стили для текста внутри тега <a> */
+    .unique-link {
+      color: black; /* Цвет текста */
+      font-size: 18px; /* Размер шрифта */
+      font-weight: bold; /* Жирный шрифт */
+      text-decoration: none; /* Убрать подчеркивание */
+      /* Другие стили, если нужно */
+    }
+</style>
 <div class="iknow_tm_modalbox">
     <div class="box_inner">
       <div class="close">
@@ -12,11 +22,7 @@
 <div class="iknow_tm_mobile_menu">
     <div class="mobile_menu_inner">
       <div class="mobile_in">
-        <div class="logo">
-          <a href="#">
-            <img src="{{settings.image.url}}" alt />
-          </a>
-        </div>
+        <a href="#home" class="unique-link">"Кенеш" орто мектеби</a>
         <div class="trigger">
           <div class="hamburger hamburger--slider">
             <div class="hamburger-box">
@@ -29,11 +35,40 @@
     <div class="dropdown">
       <div class="dropdown_inner">
         <ul class="transition_link">
+            <li class="current">
+              <a href="#home">Башкы бет</a>
+            </li>
+            <li>
+              <a href="{{header.header_one}}">Мугалим жөнүндө жалпы маалымат</a>
+            </li>
+            <li>
+              <a href="{{header.header_two}}">Мугалимдин ишмердүүлүгү <br>(презентация)</a>
+            </li>
+            <li>
+              <a href="{{header.header_three}}">Укуктук ченемдик актылар</a>
+            </li>
+            <li>
+              <a href="{{header.header_four}}">Билим берүү стандарты</a>
+            </li>
+            <li>
+              <a href="{{header.header_five}}">Өнүктүрүү планы</a>
+            </li>
+            <li>
+              <a href="{{header.header_six}}">Сабактардын иштелмелери</a>
+            </li>
+            <li>
+                <a href="{{header.header_seven}}">Көрсөтмө куралдар</a>
+            </li>
+            <li>
+              <a href="#contact">Байланыш</a>
+            </li>
+        </ul>
+        {% comment %} <ul class="transition_link">
           <li class="current">
             <a href="#home">Башкы бет</a>
           </li>
           <li>
-            <a href="#about">Мугалим жөнүндө жалпы маалымат</a>
+            <a href="{{header.header_one}}">Мугалим жөнүндө жалпы маалымат</a>
           </li>
           <li>
             <a href="#resume">Resume</a>
@@ -51,63 +86,109 @@
             <a href="#news">Blog</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Байланыш</a>
           </li>
-        </ul>
+        </ul> {% endcomment %}
       </div>
     </div>
   </div>
   <div class="iknow_tm_sidebar_2">
     <div class="sidebar_inner">
       <div class="logo">
-        <a href="#">
-          <img src="{{settings.image.url}}" alt />
-        </a>
+        <a href="#home" class="unique-link">"Кенеш" орто мектеби</a>
       </div>
       <div class="menu transition_link">
         <ul>
-          <li class="active">
-            <img class="svg" src="{% static 'img/svg/squares.svg' %}" alt />
-            <span>Башкы бет</span>
-            <a class="iknow_tm_full_link" href="#home"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/archive.svg' %}" alt />
-            <span>Мугалим жөнүндө жалпы маалымат </span>
-            <a class="iknow_tm_full_link" href="#about"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/contacs.svg' %}" alt />
-            <span>Resume</span>
-            <a class="iknow_tm_full_link" href="#resume"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/briefcase.svg' %}" alt />
-            <span>Portfolio</span>
-            <a class="iknow_tm_full_link" href="#portfolio"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/gear.svg' %}" alt />
-            <span>Service</span>
-            <a class="iknow_tm_full_link" href="#service"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/message.svg' %}" alt />
-            <span>Testimonial</span>
-            <a class="iknow_tm_full_link" href="#testimonials"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/writing.svg' %}" alt />
-            <span>Blog</span>
-            <a class="iknow_tm_full_link" href="#news"></a>
-          </li>
-          <li>
-            <img class="svg" src="{% static 'img/svg/letter.svg' %}" alt />
-            <span>Contact</span>
-            <a class="iknow_tm_full_link" href="#contact"></a>
-          </li>
-          <span class="ccc"></span>
+            <li class="active">
+                <img class="svg" src="{% static 'img/svg/squares.svg' %}" alt />
+                <span>Башкы бет</span>
+                <a class="iknow_tm_full_link" href="#home"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/archive.svg' %}" alt />
+                <span>Мугалим жөнүндө жалпы маалымат </span>
+                <a class="iknow_tm_full_link" href="{{header.header_one}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/contacs.svg' %}" alt />
+                <span>Мугалимдин ишмердүүлүгү (презентация)</span>
+                <a class="iknow_tm_full_link" href="{{header.header_two}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/briefcase.svg' %}" alt />
+                <span>Укуктук ченемдик актылар</span>
+                <a class="iknow_tm_full_link" href="{{header.header_three}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/gear.svg' %}" alt />
+                <span>Билим берүү стандарты</span>
+                <a class="iknow_tm_full_link" href="{{header.header_four}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/message.svg' %}" alt />
+                <span>Өнүктүрүү планы</span>
+                <a class="iknow_tm_full_link" href="{{header.header_five}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/writing.svg' %}" alt />
+                <span>Сабактардын иштелмелери</span>
+                <a class="iknow_tm_full_link" href="{{header.header_six}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/writing.svg' %}" alt />
+                <span>Көрсөтмө куралдар</span>
+                <a class="iknow_tm_full_link" href="{{header.header_seven}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/letter.svg' %}" alt />
+                <span>Байланыш</span>
+                <a class="iknow_tm_full_link" href="#contact"></a>
+            </li>
+            <span class="ccc"></span>
         </ul>
+        {% comment %} <ul>
+            <li class="active">
+                <img class="svg" src="{% static 'img/svg/squares.svg' %}" alt />
+                <span>Башкы бет</span>
+                <a class="iknow_tm_full_link" href="#home"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/archive.svg' %}" alt />
+                <span>Мугалим жөнүндө жалпы маалымат </span>
+                <a class="iknow_tm_full_link" href="{{header.header_one}}"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/contacs.svg' %}" alt />
+                <span>Resume</span>
+                <a class="iknow_tm_full_link" href="#resume"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/briefcase.svg' %}" alt />
+                <span>Portfolio</span>
+                <a class="iknow_tm_full_link" href="#portfolio"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/gear.svg' %}" alt />
+                <span>Service</span>
+                <a class="iknow_tm_full_link" href="#service"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/message.svg' %}" alt />
+                <span>Testimonial</span>
+                <a class="iknow_tm_full_link" href="#testimonials"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/writing.svg' %}" alt />
+                <span>Blog</span>
+                <a class="iknow_tm_full_link" href="#news"></a>
+            </li>
+            <li>
+                <img class="svg" src="{% static 'img/svg/letter.svg' %}" alt />
+                <span>Байланыш</span>
+                <a class="iknow_tm_full_link" href="#contact"></a>
+            </li>
+            <span class="ccc"></span>
+        </ul> {% endcomment %}
       </div>
     </div>
 </div>

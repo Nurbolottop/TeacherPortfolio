@@ -4213,7 +4213,7 @@ input[type=number] {
     position: fixed;
     top: 0;
     left: 0;
-    width: 370px;
+    width: 470px;
     height: 100vh;
     background-color: #fff;
     z-index: 20
@@ -4321,7 +4321,7 @@ input[type=number] {
 }
 
 .iknow_tm_sidebar_2 .menu ul li span {
-    font-size: 12px;
+    font-size: 14px;
     color: #222;
     font-weight: 700;
     text-transform: uppercase;

@@ -9,7 +9,10 @@
         <div class="left">
           {% comment %} <span class="hello">Hello,I'm</span> {% endcomment %}
           <h3 class="name">{{user_info.name}}</h3>
-          <p class="text">{{user_info.descriptions|safe}}</p>
+          <div>
+            {{user_info.descriptions|safe}} 
+          </div>
+
           <div class="iknow_tm_button yellow transition_link">
             <br>
             <a href="#contact">Мени менен байланыш</a>

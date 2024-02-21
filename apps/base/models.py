@@ -71,12 +71,12 @@ class Header(models.Model):
     )
     header_six = models.FileField(
         upload_to="header/",
-        verbose_name="Өнүктүрүү планы",
+        verbose_name="Корсотмо куралдар",
         blank = True,null = True
     )
     header_seven = models.FileField(
         upload_to="header/",
-        verbose_name="Сабактардын иштелмелери",
+        verbose_name="Брейринг иштелмелери",
         blank = True,null = True
     )
     

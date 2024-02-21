@@ -75,32 +75,6 @@
           </div>
           <div class="topbar_extra">
             <div class="details">
-              <div class="social">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img class="svg" src="{% static 'img/svg/social/facebook.svg' %}" alt />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img class="svg" src="{% static 'img/svg/social/twitter.svg' %}" alt />
-                    </a>
-                  </li>    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                  <script src="js/jquery.js"></script>
-              
-                  <script src="js/plugins.js"></script>
-                  <script src="js/init.js"></script>
-                </body>
-              </html>
-                  <li>
-                    <a href="#">
-                      <img class="svg" src="{% static 'img/svg/social/youtube.svg' %}" alt />
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
               <div class="iknow_tm_button">
                 <a href="{{user_info.resume}}" download>CV ЖҮКТӨП АЛЫҢЫЗ</a>
               </div>
@@ -128,12 +102,12 @@
                     <li>
                       <a href="#">Terms &amp; Condition</a>
                     </li>
-                    <li>
+                    {% comment %} <li>
                       <a href="#">Privacy Policy</a>
                     </li>
                     <li>
                       <a href="#">Login</a>
-                    </li>
+                    </li> {% endcomment %}
                   </ul>
                 </div>
               </div>

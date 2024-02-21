@@ -47,30 +47,37 @@ class User(models.Model):
 class Header(models.Model):
     header_one = models.FileField(
         upload_to="header/",
-        verbose_name="Мугалим жөнүндө жалпы маалымат "
+        verbose_name="Мугалим жөнүндө жалпы маалымат ",
+        blank = True,null = True
     )
     header_two = models.URLField(
-        verbose_name="Мугалимдин ишмердүүлүгү (презентация)"
+        verbose_name="Мугалимдин ишмердүүлүгү (презентация)",
+        blank = True,null = True
     )
     header_three = models.FileField(
         upload_to="header/",
-        verbose_name="Укуктук ченемдик актылар"
+        verbose_name="Укуктук ченемдик актылар",
+        blank = True,null = True
     )
     header_four = models.FileField(
         upload_to="header/",
-        verbose_name="Билим берүү стандарты"
+        verbose_name="Билим берүү стандарты",
+        blank = True,null = True
     )      
     header_five = models.FileField(
         upload_to="header/",
-        verbose_name="Өнүктүрүү планы"
+        verbose_name="Өнүктүрүү планы",
+        blank = True,null = True
     )
     header_six = models.FileField(
         upload_to="header/",
-        verbose_name="Өнүктүрүү планы"
+        verbose_name="Өнүктүрүү планы",
+        blank = True,null = True
     )
     header_seven = models.FileField(
         upload_to="header/",
-        verbose_name="Сабактардын иштелмелери"
+        verbose_name="Сабактардын иштелмелери",
+        blank = True,null = True
     )
     
     class Meta:

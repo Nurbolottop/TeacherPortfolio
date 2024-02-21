@@ -11,7 +11,7 @@ class User(models.Model):
         verbose_name="Cуроту",
         blank = True, null = True
     )
-    resume = models.ImageField(
+    resume = models.FileField(
         upload_to="resume/",
         verbose_name="Резюме"
     )

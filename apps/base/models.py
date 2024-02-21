@@ -49,8 +49,7 @@ class Header(models.Model):
         upload_to="header/",
         verbose_name="Мугалим жөнүндө жалпы маалымат "
     )
-    header_two = models.FileField(
-        upload_to="header/",
+    header_two = models.URLField(
         verbose_name="Мугалимдин ишмердүүлүгү (презентация)"
     )
     header_three = models.FileField(
